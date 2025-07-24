@@ -13,11 +13,12 @@ def get_player_guess():
     # Student 1: Add your code here
     while True:
         try:
-            guess = int(input("Enter your guess (1-100): "))
-            if 1 <= guess <= 100:
-                return guess
+            player_guess = int(input("Enter your guess (1-100): "))
+            if 1 <= player_guess <= 100:
+                return player_guess
             else:
                 print("❗ Please enter a number between 1 and 100.")
+            print("Your guess number is ", player_guess)
         except ValueError:
             print("❗ Invalid input. Please enter a valid number.")
     pass
